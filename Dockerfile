@@ -48,14 +48,14 @@ RUN apt-get update \
 #     │                                 sox binutils-m68k-linux-gnu xa65 f9dasm libvgm vgmstream ghidra
 #     ├── foundry-emulators-computers = dosbox-x hatari fs-uae openmsx openmsx-data
 #     ├── foundry-emulators-consoles  = fceux mednafen stella desmume scummvm frotz
-#     ├── foundry-game-frameworks     = tiled love libsdl2-dev libsdl3-dev libsfml-dev
+#     ├── foundry-game-frameworks     = tiled libsdl2-dev libsdl3-dev libsfml-dev
 #     │                                 liballegro5-dev libtcod-dev glslang-tools spirv-cross spirv-tools
 #     ├── foundry-image-cli           = imagemagick graphicsmagick
 #     ├── task                          (resolved directly from the Cloudsmith repo configured in Layer 1)
-#     ├── worldfoundry [cross-repo]   = worldfoundry-cli + worldfoundry-blender
+#     ├── worldfoundry [cross-repo]   = worldfoundry-cli + worldfoundry-blender-addons
 #     │     ├── worldfoundry-cli      = cdpack iffcomp iffdump levcomp lvldump oaddump
 #     │     │                           oas2oad textile blender-asset-finder-cli prep
-#     │     └── worldfoundry-blender  = wf-blender + blender-asset-finder + blender (5.0.1)
+#     │     └── worldfoundry-blender-addons  = worldfoundry-blender-editor-exporter + blender-asset-finder + blender (5.0.1)
 #     └── sudo libvte-2.91-0 bash-completion man-db   (distrobox conveniences)
 RUN apt-get install -y --no-install-recommends \
         foundry-anvil \
